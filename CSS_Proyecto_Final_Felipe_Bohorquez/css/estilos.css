@@ -1,0 +1,208 @@
+
+
+
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: black;
+}
+
+header {
+	background-color: #5b7989;
+  display: flex;
+  border-radius: 20px 20px 0px 0px;
+  padding: 1%;
+  animation: rebote 1s;
+}
+
+img {
+  box-shadow: 2px 2px 2px #02010a;
+
+
+}
+
+.titulo {
+  /*float: left;*/
+  text-shadow: 2px 2px #02010a;
+  color: white;
+  flex-grow: 2;
+  order: 1;
+}
+
+navbar, navbar:link  {
+  order: 2;
+  margin: auto;
+
+}
+
+a:link  {
+  text-decoration: none;
+}
+
+.central {
+  background-color: #82c3a6;
+  /*display: flex;
+	flex-flow: row wrap;*/
+  padding: 5%
+
+}
+
+section #central {
+  display: flex;
+  order: 3;
+}
+
+.secunda {
+  background-color: #d5c75f;
+  border: 1px;
+  display: flex;
+  padding: 3%;
+  margin: auto;
+
+}
+
+section #secundaL {
+  display: flex;
+  order: 3;
+}
+
+section #secundaR {
+  display: flex;
+  order: 4;
+}
+
+footer {
+	background-color: #C6d5c5;
+	border-radius: 0 0 20px 20px;
+	display: flex;
+	flex-flow: row wrap;
+  padding: 1%;
+}
+.pie img{
+		width: 30px;
+		height: 30px;
+}
+.pie span{
+	font-size: 12px;
+}
+
+.pie {
+  margin: auto;
+}
+
+.contenido {
+  margin: 0 auto;
+}
+
+/*movil*/
+@media (max-width: 900px) {
+.contenido {
+	width: 100%;
+}
+
+#central {
+	max-width: 50%;
+  margin: auto;
+}
+
+#secundaR {
+  max-width: 50%;
+
+}
+
+#secundaL {
+  max-width: 50%;
+
+}
+
+#flexit{
+    max-width: 80%;
+    margin: auto;
+    display: block;
+    padding: 2%;
+}
+
+#flexcont {
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+/*desktop*/
+@media (min-width: 900px) {
+.contenido {
+	width: 900px;
+}
+
+#central {
+	max-width: 80%;
+  margin: auto;
+}
+
+
+#secundaR {
+  max-width: 80%;
+
+}
+
+#secundaL {
+  max-width: 80%;
+
+}
+
+#flexcont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+#flexcont img {
+  width: 30%;
+
+
+}
+
+#flexit{
+    max-width: 90%;
+    margin: auto;
+
+    padding-top: 2%;    
+
+}
+
+
+}
+#secundaL:hover {
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 2px #82c3a6;
+}
+
+#secundaR:hover {
+    transform: translate(20px,-5px);
+    box-shadow: 2px 2px 2px #82c3a6;
+}
+
+.flex1 {
+  filter: blur(10px);
+}
+
+.flex3 {
+  filter: sepia(90%);
+}
+
+.flex2, .flex4, .flex6 {
+  filter: grayscale(100%);
+}
+
+@-webkit-keyframes rebote {
+  0%{
+    margin-top: 150%;
+  }60%{
+    margin-top: -5%;
+  }100%{
+    margin-top: 0%;
+  }
+
+}
