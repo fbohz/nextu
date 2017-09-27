@@ -130,6 +130,12 @@ footer {
 	text-align: center;  
 }
 
+#flexcont2 {
+  display: flex;
+  flex-direction: column;
+	text-align: center;  
+}
+
 .pie {
   margin: auto;
 }
