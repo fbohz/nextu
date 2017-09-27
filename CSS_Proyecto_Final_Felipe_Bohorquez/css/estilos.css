@@ -74,21 +74,17 @@ section #secundaR {
 footer {
 	background-color: #C6d5c5;
 	border-radius: 0 0 20px 20px;
-	display: flex;
-	flex-flow: row wrap;
-  padding: 1%;
+
+	padding: 1%;
 }
 .pie img{
-		width: 30px;
-		height: 30px;
+		max-width: 7%;
 }
 .pie span{
 	font-size: 12px;
 }
 
-.pie {
-  margin: auto;
-}
+
 
 .contenido {
   margin: 0 auto;
@@ -106,12 +102,18 @@ footer {
 }
 
 #secundaR {
-  max-width: 50%;
+    max-width: 80%;
+    margin: auto;
+    display: block;
+    padding: 2%;
 
 }
 
 #secundaL {
-  max-width: 50%;
+    max-width: 80%;
+    margin: auto;
+    display: block;
+    padding: 2%;
 
 }
 
@@ -125,6 +127,11 @@ footer {
 #flexcont {
   display: flex;
   flex-direction: column;
+	text-align: center;  
+}
+
+.pie {
+  margin: auto;
 }
 
 }
@@ -158,6 +165,13 @@ footer {
 
 }
 
+#flexcont2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
 #flexcont img {
   width: 30%;
 
@@ -170,6 +184,14 @@ footer {
 
     padding-top: 2%;    
 
+}
+
+.pie {
+	/*display: flex;
+	flex-flow: row wrap;*/
+	display: inline;
+	text-align: center;
+	
 }
 
 
